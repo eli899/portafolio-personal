@@ -223,7 +223,7 @@ const mensajeFormulario =
     document.querySelector("#mensaje-formulario");
 
 
-formulario.addEventListener("submit", (evento) => {
+formulario.addEventListener("submit", async (evento) => {
 
     evento.preventDefault();
 
@@ -248,14 +248,56 @@ formulario.addEventListener("submit", (evento) => {
             "Por favor completa todos los campos.";
 
         return;
-
     }
 
 
     mensajeFormulario.textContent =
-        `Gracias ${nombre}. Tu mensaje fue validado correctamente.`;
+        "Enviando mensaje...";
+
+    console.log("Formulario:", formulario);
+    console.log("Action:", formulario.action);
+    console.log("Method:", formulario.method);
 
 
-    formulario.reset();
+    const datos =
+        new FormData(formulario);
+
+
+    try {
+
+        const respuesta =
+            await fetch(formulario.action, {
+
+                method: formulario.method,
+
+                body: datos,
+
+                headers: {
+                    "Accept": "application/json"
+                }
+
+            });
+
+
+        if (respuesta.ok) {
+
+            mensajeFormulario.textContent =
+                `Gracias ${nombre}. Tu mensaje fue enviado correctamente.`;
+
+            formulario.reset();
+
+        } else {
+
+            mensajeFormulario.textContent =
+                "No se pudo enviar el mensaje. Inténtalo nuevamente.";
+
+        }
+
+    } catch (error) {
+
+        mensajeFormulario.textContent =
+            "Ocurrió un error al enviar el mensaje.";
+
+    }
 
 });
