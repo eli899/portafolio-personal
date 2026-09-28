@@ -6,18 +6,18 @@
 :root {
 
     /* Colores */
-    --color-primary: #2563eb;
-    --color-primary-hover: #1d4ed8;
+    --color-primary: #b76e4b;
+    --color-primary-hover: #9c5b3d;
+    --color-secondary: #d6a77a;
 
-    --color-secondary: #7c3aed;
-
-    --color-background: #ffffff;
-    --color-surface: #f8fafc;
+    --color-background: #f8f3ea;
+    --color-surface: #fffaf3;
 
     --color-text: #0f172a;
     --color-text-muted: #64748b;
 
     --color-border: #e2e8f0;
+    --color-footer: #0f172a;
 
     /* Tipografía */
     --font-primary: Arial, Helvetica, sans-serif;
@@ -454,7 +454,7 @@ button {
 .nivel {
     display: inline-block;
 
-    background-color: #dbeafe;
+    background-color: #f3e2d6;
 
     color: var(--color-primary);
 
@@ -574,7 +574,7 @@ button {
 
     border-radius: 50px;
 
-    background-color: #dbeafe;
+    background-color: #f3e2d6;
 
     color: var(--color-primary);
 
@@ -682,36 +682,27 @@ button {
 
 
 .color-primary {
-    background-color: #2563eb;
-
+    background-color: #b76e4b;
     color: #ffffff;
 }
-
 
 .color-secondary {
-    background-color: #7c3aed;
-
-    color: #ffffff;
+    background-color: #d6a77a;
+    color: #2f2a26;
 }
-
 
 .color-background {
-    background-color: #ffffff;
-
-    color: #0f172a;
+    background-color: #f8f3ea;
+    color: #2f2a26;
 }
-
 
 .color-surface {
-    background-color: #f8fafc;
-
-    color: #0f172a;
+    background-color: #fffaf3;
+    color: #2f2a26;
 }
 
-
 .color-text {
-    background-color: #0f172a;
-
+    background-color: #2f2a26;
     color: #ffffff;
 }
 
@@ -819,8 +810,9 @@ textarea {
 input:focus,
 textarea:focus {
     border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgb(183 110 75 / 0.15);
 
-    box-shadow: 0 0 0 3px rgb(37 99 235 / 0.15);
+
 }
 
 
@@ -888,6 +880,29 @@ textarea {
     color: #93c5fd;
 }
 
+/* TEMA OSCURO */
+
+body.oscuro {
+    --color-background: #0f172a;
+    --color-surface: #1e293b;
+    --color-text: #f8fafc;
+    --color-text-muted: #cbd5e1;
+    --color-border: #334155;
+}
+
+
+body.oscuro .footer {
+    background-color: #020617;
+    color: #ffffff;
+}
+
+body.oscuro .footer p {
+    color: #ffffff;
+}
+
+body.oscuro .footer a {
+    color: #93c5fd;
+}
 
 /* =========================================
    MODAL
