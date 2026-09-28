@@ -9,57 +9,48 @@
 
 :root {
 
-    /* Colores principales */
     --color-primary: #b76e4b;
     --color-primary-hover: #9c5b3d;
     --color-secondary: #d6a77a;
 
-    /* Fondos */
     --color-background: #f8f3ea;
     --color-surface: #fffaf3;
+
     --color-soft: #f3e2d6;
     --color-soft-light: #faeee3;
 
-    /* Texto */
     --color-text: #2f2a26;
     --color-text-muted: #766c64;
 
-    /* Bordes */
     --color-border: #e7d8c8;
 
-    /* Footer */
     --color-footer: #2f2a26;
 
-    /* Tipografía */
     --font-primary: Arial, Helvetica, sans-serif;
 
-    /* Espaciados */
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
     --space-md: 1rem;
     --space-lg: 2rem;
     --space-xl: 4rem;
 
-    /* Bordes redondeados */
     --radius-sm: 0.6rem;
     --radius-md: 1rem;
     --radius-lg: 1.5rem;
     --radius-xl: 2rem;
 
-    /* Sombras */
     --shadow-sm:
         0 4px 12px rgb(80 55 40 / 0.08);
 
     --shadow-card:
         0 14px 35px rgb(80 55 40 / 0.13);
 
-    /* Ancho máximo */
     --max-width: 1200px;
 }
 
 
 /* =========================================
-   RESET GENERAL
+   RESET
 ========================================= */
 
 * {
@@ -135,7 +126,6 @@ button {
 
 .encabezado {
     position: sticky;
-
     top: 0;
 
     z-index: 1000;
@@ -153,9 +143,9 @@ button {
 .navbar {
     max-width: var(--max-width);
 
-    margin: 0 auto;
-
     min-height: 75px;
+
+    margin: 0 auto;
 
     display: flex;
 
@@ -181,9 +171,12 @@ button {
 
     justify-content: center;
 
+    flex-shrink: 0;
+
     border-radius: 50%;
 
-    background-color: var(--color-primary);
+    background-color:
+        var(--color-primary);
 
     color: #ffffff;
 
@@ -191,7 +184,8 @@ button {
 
     font-weight: 800;
 
-    box-shadow: var(--shadow-sm);
+    box-shadow:
+        var(--shadow-sm);
 }
 
 
@@ -209,13 +203,15 @@ button {
 .menu a {
     position: relative;
 
-    color: var(--color-text);
+    color:
+        var(--color-text);
 
-    font-size: 0.95rem;
+    font-size: 0.92rem;
 
     font-weight: 600;
 
-    transition: color 0.3s;
+    transition:
+        color 0.3s;
 }
 
 
@@ -225,11 +221,9 @@ button {
     position: absolute;
 
     left: 0;
-
     bottom: -6px;
 
     width: 0;
-
     height: 2px;
 
     border-radius: 10px;
@@ -237,12 +231,14 @@ button {
     background-color:
         var(--color-primary);
 
-    transition: width 0.3s;
+    transition:
+        width 0.3s;
 }
 
 
 .menu a:hover {
-    color: var(--color-primary);
+    color:
+        var(--color-primary);
 }
 
 
@@ -258,7 +254,8 @@ button {
 
     background: transparent;
 
-    color: var(--color-text);
+    color:
+        var(--color-text);
 
     font-size: 1.6rem;
 }
@@ -274,13 +271,19 @@ button {
 
     justify-content: center;
 
-    border: 1px solid var(--color-border);
+    flex-shrink: 0;
+
+    border:
+        1px solid
+        var(--color-border);
 
     border-radius: 50%;
 
-    background-color: var(--color-surface);
+    background-color:
+        var(--color-surface);
 
-    color: var(--color-text);
+    color:
+        var(--color-text);
 
     font-size: 1.1rem;
 
@@ -291,9 +294,11 @@ button {
 
 
 .boton-tema:hover {
-    transform: translateY(-2px);
+    transform:
+        translateY(-2px);
 
-    box-shadow: var(--shadow-sm);
+    box-shadow:
+        var(--shadow-sm);
 }
 
 
@@ -333,7 +338,8 @@ button {
 
 
 .boton:hover {
-    transform: translateY(-3px);
+    transform:
+        translateY(-3px);
 
     box-shadow:
         0 8px 18px
@@ -356,7 +362,8 @@ button {
 
 
 .boton-secundario {
-    background-color: transparent;
+    background-color:
+        transparent;
 
     border-color:
         var(--color-primary);
@@ -375,20 +382,21 @@ button {
 
 
 /* =========================================
-   INICIO / HERO
+   INICIO
 ========================================= */
 
 .inicio {
     min-height: 88vh;
 
-    max-width: var(--max-width);
+    max-width:
+        var(--max-width);
 
     margin: 0 auto;
 
     display: grid;
 
     grid-template-columns:
-        1.08fr
+        1.05fr
         1fr;
 
     align-items: center;
@@ -401,15 +409,11 @@ button {
 }
 
 
-.inicio-contenido {
-    position: relative;
-}
-
-
 .saludo {
     margin-bottom: 0.3rem;
 
-    color: var(--color-text);
+    color:
+        var(--color-text);
 
     font-size: 1.2rem;
 
@@ -418,9 +422,11 @@ button {
 
 
 .inicio h1 {
-    margin-bottom: var(--space-md);
+    margin-bottom:
+        var(--space-md);
 
-    color: var(--color-primary);
+    color:
+        var(--color-primary);
 
     font-size:
         clamp(
@@ -438,24 +444,24 @@ button {
 .inicio h2 {
     max-width: 560px;
 
-    margin-bottom: var(--space-md);
+    margin-bottom:
+        var(--space-md);
 
-    color: var(--color-text);
+    color:
+        var(--color-text);
 
-    font-size: 1.25rem;
-
-    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 
 .descripcion {
     max-width: 600px;
 
-    margin-bottom: var(--space-lg);
+    margin-bottom:
+        var(--space-lg);
 
-    color: var(--color-text-muted);
-
-    font-size: 1rem;
+    color:
+        var(--color-text-muted);
 }
 
 
@@ -464,26 +470,27 @@ button {
 
     flex-wrap: wrap;
 
-    gap: var(--space-md);
+    gap:
+        var(--space-md);
 }
 
 
 /* =========================================
-   LADO VISUAL DEL HERO
+   FOTO Y DESTACADOS
 ========================================= */
 
 .inicio-visual {
     position: relative;
 
-    min-height: 450px;
+    min-height: 470px;
 
     display: flex;
 
     align-items: center;
 
-    justify-content: center;
+    justify-content: flex-start;
 
-    padding-right: 120px;
+    padding-right: 135px;
 }
 
 
@@ -492,9 +499,9 @@ button {
 
     margin: 0;
 
-    z-index: 1;
-
     text-align: center;
+
+    z-index: 1;
 }
 
 
@@ -530,22 +537,23 @@ button {
 
     position: absolute;
 
-    top: -25px;
-    right: -25px;
+    top: -20px;
+    right: -20px;
 
-    width: 75px;
-    height: 75px;
+    width: 72px;
+    height: 72px;
 
     border:
         3px solid
         var(--color-secondary);
 
     border-radius:
-        40% 60% 60% 40%;
+        42% 58% 62% 38%;
 
     opacity: 0.7;
 
-    transform: rotate(25deg);
+    transform:
+        rotate(25deg);
 }
 
 
@@ -563,31 +571,30 @@ button {
 
     border-radius: 50%;
 
-    box-shadow: var(--shadow-card);
+    box-shadow:
+        var(--shadow-card);
 }
 
 
 .inicio-imagen figcaption {
-    margin-top: var(--space-md);
+    margin-top:
+        var(--space-md);
 
-    color: var(--color-text-muted);
+    color:
+        var(--color-text-muted);
 
     font-size: 0.85rem;
 }
 
 
-/* =========================================
-   TARJETAS FLOTANTES DEL HERO
-========================================= */
-
 .inicio-destacados {
     position: absolute;
 
-    right: -70px;
-
+    right: -60px;
     top: 50%;
 
-    transform: translateY(-50%);
+    transform:
+        translateY(-50%);
 
     display: flex;
 
@@ -600,7 +607,7 @@ button {
 
 
 .destacado {
-    min-width: 190px;
+    min-width: 205px;
 
     display: flex;
 
@@ -609,11 +616,11 @@ button {
     gap: 0.7rem;
 
     padding:
-        0.8rem
+        0.85rem
         1rem;
 
     background-color:
-        rgb(255 250 243 / 0.95);
+        rgb(255 250 243 / 0.97);
 
     border:
         1px solid
@@ -621,9 +628,8 @@ button {
 
     border-radius: 999px;
 
-    box-shadow: var(--shadow-sm);
-
-    backdrop-filter: blur(6px);
+    box-shadow:
+        var(--shadow-sm);
 
     transition:
         transform 0.3s,
@@ -633,23 +639,24 @@ button {
 
 .destacado:hover {
     transform:
-        translateX(-6px);
+        translateX(-5px);
 
-    box-shadow: var(--shadow-card);
+    box-shadow:
+        var(--shadow-card);
 }
 
 
 .destacado-icono {
-    width: 36px;
-    height: 36px;
-
-    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
 
     display: flex;
 
     align-items: center;
 
     justify-content: center;
+
+    flex-shrink: 0;
 
     border-radius: 50%;
 
@@ -659,7 +666,8 @@ button {
 
 
 .destacado p {
-    color: var(--color-text);
+    color:
+        var(--color-text);
 
     font-size: 0.86rem;
 
@@ -668,11 +676,12 @@ button {
 
 
 /* =========================================
-   SECCIONES GENERALES
+   SECCIONES
 ========================================= */
 
 .seccion {
-    max-width: var(--max-width);
+    max-width:
+        var(--max-width);
 
     margin: 0 auto;
 
@@ -695,31 +704,33 @@ button {
     inset: 1rem;
 
     background-color:
-        rgb(255 250 243 / 0.5);
+        rgb(255 250 243 / 0.46);
 
-    border-radius: var(--radius-xl);
+    border-radius:
+        var(--radius-xl);
 
     z-index: -1;
 }
 
 
 .titulo-seccion {
-    margin-bottom: 2.7rem;
+    margin-bottom: 2.8rem;
 }
 
 
 .titulo-seccion > p {
     margin-bottom: 0.25rem;
 
-    color: var(--color-primary);
+    color:
+        var(--color-primary);
 
-    font-weight: 700;
+    font-size: 0.8rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
 
     text-transform: uppercase;
-
-    letter-spacing: 1px;
-
-    font-size: 0.78rem;
 }
 
 
@@ -728,13 +739,14 @@ button {
 
     display: inline-block;
 
-    color: var(--color-text);
+    color:
+        var(--color-text);
 
     font-size:
         clamp(
             2rem,
             4vw,
-            2.7rem
+            2.8rem
         );
 }
 
@@ -767,7 +779,8 @@ button {
         1.2fr
         1fr;
 
-    gap: var(--space-lg);
+    gap:
+        var(--space-lg);
 
     align-items: stretch;
 }
@@ -792,16 +805,19 @@ button {
 
 
 .sobre-mi-texto h3 {
-    margin-bottom: var(--space-md);
+    margin-bottom:
+        var(--space-md);
 
     font-size: 1.4rem;
 }
 
 
 .sobre-mi-texto p {
-    margin-bottom: var(--space-md);
+    margin-bottom:
+        var(--space-md);
 
-    color: var(--color-text-muted);
+    color:
+        var(--color-text-muted);
 }
 
 
@@ -811,7 +827,8 @@ button {
     grid-template-columns:
         repeat(3, 1fr);
 
-    gap: var(--space-md);
+    gap:
+        var(--space-md);
 }
 
 
@@ -887,14 +904,16 @@ button {
 
 
 .dato-card p {
-    color: var(--color-text-muted);
+    color:
+        var(--color-text-muted);
 
     font-size: 0.78rem;
 }
 
 
 .intereses {
-    margin-top: var(--space-lg);
+    margin-top:
+        var(--space-lg);
 
     padding:
         1.3rem
@@ -933,14 +952,14 @@ button {
         0.4rem
         0.85rem;
 
+    border:
+        1px solid
+        var(--color-border);
+
     border-radius: 999px;
 
     background-color:
         var(--color-surface);
-
-    border:
-        1px solid
-        var(--color-border);
 
     color:
         var(--color-text-muted);
@@ -953,27 +972,41 @@ button {
    HABILIDADES
 ========================================= */
 
+#habilidades .titulo-seccion h2 {
+    font-size:
+        clamp(
+            2.7rem,
+            5vw,
+            4.5rem
+        );
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
 .grid-habilidades {
     display: grid;
 
     grid-template-columns:
         repeat(
-            auto-fit,
-            minmax(150px, 1fr)
+            3,
+            minmax(0, 1fr)
         );
 
-    gap: 1.2rem;
+    gap: 1.3rem;
 }
 
 
-.skill {
-    position: relative;
+.habilidad-card {
+    min-height: 295px;
 
-    overflow: hidden;
+    display: flex;
 
-    padding: 1.6rem;
+    flex-direction: column;
 
-    text-align: center;
+    padding: 1.9rem;
 
     background-color:
         var(--color-surface);
@@ -983,92 +1016,103 @@ button {
         var(--color-border);
 
     border-radius:
-        var(--radius-lg);
+        var(--radius-xl);
 
     box-shadow:
-        var(--shadow-sm);
+        0 3px 10px
+        rgb(80 55 40 / 0.04);
 
     transition:
         transform 0.3s,
-        box-shadow 0.3s;
+        box-shadow 0.3s,
+        border-color 0.3s;
 }
 
 
-.skill::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 4px;
-
-    background:
-        linear-gradient(
-            90deg,
-            var(--color-primary),
-            var(--color-secondary)
-        );
-}
-
-
-.skill:hover {
+.habilidad-card:hover {
     transform:
-        translateY(-8px);
+        translateY(-6px);
+
+    border-color:
+        var(--color-secondary);
 
     box-shadow:
         var(--shadow-card);
 }
 
 
-.skill-icono {
-    width: 62px;
-    height: 62px;
+.habilidad-destacada {
+    border:
+        2px solid
+        var(--color-primary);
+}
 
-    margin:
-        0 auto
-        var(--space-md);
 
+.habilidad-header {
     display: flex;
 
-    align-items: center;
+    align-items: flex-start;
 
-    justify-content: center;
+    justify-content: space-between;
 
-    border-radius: 50%;
+    gap:
+        var(--space-md);
 
-    background-color:
-        var(--color-soft);
-
-    font-size: 1.9rem;
+    margin-bottom: 2.2rem;
 }
 
 
-.skill h3 {
-    margin-bottom: 0.2rem;
+.habilidad-header h3 {
+    color:
+        var(--color-text);
 
-    font-size: 1rem;
+    font-size: 1.45rem;
+
+    line-height: 1.2;
 }
 
 
-.skill p {
-    margin-bottom: 0.7rem;
+.habilidad-nivel {
+    flex-shrink: 0;
+
+    color:
+        var(--color-primary);
+
+    font-size: 0.8rem;
+
+    font-weight: 800;
+}
+
+
+.habilidad-descripcion {
+    margin-bottom: 1.4rem;
 
     color:
         var(--color-text-muted);
 
-    font-size: 0.84rem;
+    font-size: 1rem;
+
+    line-height: 1.75;
 }
 
 
-.nivel {
+.habilidad-etiquetas {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.55rem;
+
+    margin-top: auto;
+}
+
+
+.habilidad-etiquetas span {
     display: inline-block;
 
     padding:
-        0.32rem
-        0.7rem;
+        0.42rem
+        0.78rem;
 
     border-radius: 999px;
 
@@ -1078,9 +1122,21 @@ button {
     color:
         var(--color-primary);
 
-    font-size: 0.75rem;
+    font-size: 0.78rem;
 
     font-weight: 700;
+
+    transition:
+        transform 0.2s,
+        background-color 0.2s;
+}
+
+
+.habilidad-etiquetas span:hover {
+    transform:
+        translateY(-2px);
+
+    background-color: #ead2c1;
 }
 
 
@@ -1095,7 +1151,8 @@ button {
 
     gap: 0.7rem;
 
-    margin-bottom: var(--space-lg);
+    margin-bottom:
+        var(--space-lg);
 }
 
 
@@ -1242,7 +1299,8 @@ button {
 
 
 .proyecto-card:hover img {
-    transform: scale(1.04);
+    transform:
+        scale(1.04);
 }
 
 
@@ -1260,7 +1318,8 @@ button {
 .proyecto-contenido h3 {
     margin-bottom: 0.5rem;
 
-    color: var(--color-text);
+    color:
+        var(--color-text);
 
     font-size: 1.12rem;
 
@@ -1330,10 +1389,10 @@ button {
         0.35rem
         0.65rem;
 
+    border-radius: 999px;
+
     background-color:
         var(--color-soft-light);
-
-    border-radius: 999px;
 
     color:
         var(--color-text);
@@ -1351,18 +1410,14 @@ button {
 
     gap: 0.7rem;
 
-    padding-top: var(--space-md);
+    padding-top:
+        var(--space-md);
 }
 
 
 /* =========================================
    DESIGN SYSTEM
 ========================================= */
-
-#design-system {
-    position: relative;
-}
-
 
 .design-grid {
     display: grid;
@@ -1415,6 +1470,12 @@ button {
         0.7rem
         0
         1.2rem;
+}
+
+
+.design-bloque > p {
+    color:
+        var(--color-text-muted);
 }
 
 
@@ -1527,7 +1588,7 @@ button {
 
 
 /* =========================================
-   TIPOGRAFÍA DESIGN SYSTEM
+   TIPOGRAFÍA
 ========================================= */
 
 .tipografia-ejemplos {
@@ -1577,10 +1638,7 @@ button {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            2,
-            1fr
-        );
+        repeat(2, 1fr);
 
     gap: 0.8rem;
 }
@@ -1621,7 +1679,8 @@ button {
 
     flex-wrap: wrap;
 
-    gap: var(--space-md);
+    gap:
+        var(--space-md);
 }
 
 
@@ -1714,7 +1773,8 @@ textarea {
         0.85fr
         1.15fr;
 
-    gap: var(--space-xl);
+    gap:
+        var(--space-xl);
 
     align-items: center;
 
@@ -1736,7 +1796,8 @@ textarea {
 
 
 .contacto-informacion {
-    padding: var(--space-md);
+    padding:
+        var(--space-md);
 }
 
 
@@ -1750,7 +1811,8 @@ textarea {
 
     justify-content: center;
 
-    margin-bottom: var(--space-md);
+    margin-bottom:
+        var(--space-md);
 
     border-radius: 50%;
 
@@ -1765,14 +1827,16 @@ textarea {
 
 
 .contacto-informacion h3 {
-    margin-bottom: var(--space-md);
+    margin-bottom:
+        var(--space-md);
 
     font-size: 1.5rem;
 }
 
 
 .contacto-informacion p {
-    margin-bottom: var(--space-md);
+    margin-bottom:
+        var(--space-md);
 
     color:
         var(--color-text-muted);
@@ -1812,7 +1876,8 @@ textarea {
 ========================================= */
 
 .footer {
-    padding: var(--space-lg);
+    padding:
+        var(--space-lg);
 
     display: flex;
 
@@ -1822,7 +1887,8 @@ textarea {
 
     flex-wrap: wrap;
 
-    gap: var(--space-lg);
+    gap:
+        var(--space-lg);
 
     background-color:
         var(--color-footer);
@@ -1904,7 +1970,8 @@ dialog::backdrop {
 
 
 #modal-titulo {
-    margin-bottom: var(--space-md);
+    margin-bottom:
+        var(--space-md);
 
     color:
         var(--color-primary);
@@ -1918,7 +1985,7 @@ dialog::backdrop {
 
 
 /* =========================================
-   TEMA OSCURO
+   MODO OSCURO
 ========================================= */
 
 body.oscuro {
@@ -1952,13 +2019,32 @@ body.oscuro {
 
 body.oscuro .encabezado {
     background-color:
-        rgb(23 19 15 / 0.9);
+        rgb(23 19 15 / 0.92);
+}
+
+
+body.oscuro .seccion-alterna::before {
+    background-color:
+        rgb(36 29 24 / 0.35);
 }
 
 
 body.oscuro .destacado {
     background-color:
-        rgb(36 29 24 / 0.95);
+        rgb(36 29 24 / 0.97);
+}
+
+
+body.oscuro .habilidad-etiquetas span {
+    background-color:
+        var(--color-soft);
+
+    color: #efb28f;
+}
+
+
+body.oscuro .habilidad-etiquetas span:hover {
+    background-color: #493329;
 }
 
 
@@ -1996,10 +2082,10 @@ body.oscuro .footer a {
 
 
 /* =========================================
-   TABLETS
+   PANTALLAS MEDIANAS
 ========================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
 
     .boton-contacto-nav {
         display: none;
@@ -2011,25 +2097,35 @@ body.oscuro .footer a {
     }
 
 
-    .inicio {
-        grid-template-columns:
-            1fr
-            1fr;
-    }
-
-
     .inicio-destacados {
-        right: -5px;
+        right: -20px;
     }
 
 
     .destacado {
-        min-width: 165px;
+        min-width: 180px;
     }
 
 
     .datos-personales {
         grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .grid-habilidades {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
     }
 
 }
@@ -2046,6 +2142,11 @@ body.oscuro .footer a {
     }
 
 
+    .logo {
+        order: 1;
+    }
+
+
     .boton-menu {
         display: block;
 
@@ -2055,11 +2156,6 @@ body.oscuro .footer a {
 
     .boton-tema {
         order: 3;
-    }
-
-
-    .logo {
-        order: 1;
     }
 
 
@@ -2109,6 +2205,7 @@ body.oscuro .footer a {
 
     .descripcion {
         margin-left: auto;
+
         margin-right: auto;
     }
 
@@ -2119,12 +2216,18 @@ body.oscuro .footer a {
 
 
     .inicio-visual {
-        min-height: 520px;
+        min-height: auto;
+
+        padding-right: 0;
+
+        flex-direction: column;
     }
 
 
     .inicio-destacados {
         position: static;
+
+        width: 100%;
 
         margin-top: 2rem;
 
@@ -2139,9 +2242,9 @@ body.oscuro .footer a {
 
 
     .destacado {
-        min-width: auto;
-
-        flex: 1 1 180px;
+        flex:
+            1 1
+            180px;
 
         max-width: 220px;
     }
@@ -2154,7 +2257,10 @@ body.oscuro .footer a {
 
     .datos-personales {
         grid-template-columns:
-            repeat(3, 1fr);
+            repeat(
+                3,
+                1fr
+            );
     }
 
 
@@ -2171,10 +2277,10 @@ body.oscuro .footer a {
 
 
 /* =========================================
-   TELÉFONOS
+   CELULARES
 ========================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     .seccion {
         padding:
@@ -2214,13 +2320,6 @@ body.oscuro .footer a {
     }
 
 
-    .inicio-visual {
-        min-height: auto;
-
-        flex-direction: column;
-    }
-
-
     .inicio-imagen::before {
         width: 250px;
         height: 250px;
@@ -2240,16 +2339,14 @@ body.oscuro .footer a {
 
 
     .inicio-destacados {
-        width: 100%;
-
         flex-direction: column;
     }
 
 
     .destacado {
-        max-width: none;
-
         width: 100%;
+
+        max-width: none;
     }
 
 
@@ -2275,22 +2372,25 @@ body.oscuro .footer a {
     }
 
 
+    #habilidades .titulo-seccion h2 {
+        font-size: 2.6rem;
+    }
+
+
     .grid-habilidades {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
 
-    .skill {
-        padding: 1.2rem 0.8rem;
+    .habilidad-card {
+        min-height: auto;
+
+        padding: 1.5rem;
     }
 
 
-    .skill-icono {
-        width: 52px;
-        height: 52px;
-
-        font-size: 1.6rem;
+    .habilidad-header {
+        margin-bottom: 1.5rem;
     }
 
 
@@ -2309,14 +2409,12 @@ body.oscuro .footer a {
     }
 
 
-    .design-grid {
-        grid-template-columns: 1fr;
-    }
-
-
     .paleta {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(
+                2,
+                1fr
+            );
     }
 
 
@@ -2336,19 +2434,22 @@ body.oscuro .footer a {
 
 
     .contacto-contenedor {
-        padding: var(--space-md);
+        padding:
+            var(--space-md);
     }
 
 
     #formulario-contacto {
-        padding: var(--space-md);
+        padding:
+            var(--space-md);
     }
 
 
     .footer {
         flex-direction: column;
 
-        gap: var(--space-sm);
+        gap:
+            var(--space-sm);
     }
 
 }

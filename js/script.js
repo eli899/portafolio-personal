@@ -223,81 +223,77 @@ const mensajeFormulario =
     document.querySelector("#mensaje-formulario");
 
 
-formulario.addEventListener("submit", async (evento) => {
+if (formulario && mensajeFormulario) {
 
-    evento.preventDefault();
+    formulario.addEventListener("submit", async (evento) => {
 
+        evento.preventDefault();
 
-    const nombre =
-        document.querySelector("#nombre").value.trim();
+        const nombre =
+            document.querySelector("#nombre").value.trim();
 
-    const correo =
-        document.querySelector("#correo").value.trim();
+        const correo =
+            document.querySelector("#correo").value.trim();
 
-    const mensaje =
-        document.querySelector("#mensaje").value.trim();
+        const mensaje =
+            document.querySelector("#mensaje").value.trim();
 
+        if (
+            nombre === "" ||
+            correo === "" ||
+            mensaje === ""
+        ) {
 
-    if (
-        nombre === "" ||
-        correo === "" ||
-        mensaje === ""
-    ) {
+            mensajeFormulario.textContent =
+                "Por favor completa todos los campos.";
+
+            return;
+        }
 
         mensajeFormulario.textContent =
-            "Por favor completa todos los campos.";
+            "Enviando mensaje...";
 
-        return;
-    }
+        const datos =
+            new FormData(formulario);
 
+        try {
 
-    mensajeFormulario.textContent =
-        "Enviando mensaje...";
+            const respuesta =
+                await fetch(formulario.action, {
 
-    console.log("Formulario:", formulario);
-    console.log("Action:", formulario.action);
-    console.log("Method:", formulario.method);
+                    method: formulario.method,
 
+                    body: datos,
 
-    const datos =
-        new FormData(formulario);
+                    headers: {
+                        "Accept": "application/json"
+                    }
 
+                });
 
-    try {
+            if (respuesta.ok) {
 
-        const respuesta =
-            await fetch(formulario.action, {
+                mensajeFormulario.textContent =
+                    `Gracias ${nombre}. Tu mensaje fue enviado correctamente.`;
 
-                method: formulario.method,
+                formulario.reset();
 
-                body: datos,
+            } else {
 
-                headers: {
-                    "Accept": "application/json"
-                }
+                mensajeFormulario.textContent =
+                    "No se pudo enviar el mensaje.";
 
-            });
+            }
 
+        } catch (error) {
 
-        if (respuesta.ok) {
-
-            mensajeFormulario.textContent =
-                `Gracias ${nombre}. Tu mensaje fue enviado correctamente.`;
-
-            formulario.reset();
-
-        } else {
+            console.log(error);
 
             mensajeFormulario.textContent =
-                "No se pudo enviar el mensaje. Inténtalo nuevamente.";
+                "Ocurrió un error al enviar el mensaje.";
 
         }
 
-    } catch (error) {
+    });
 
-        mensajeFormulario.textContent =
-            "Ocurrió un error al enviar el mensaje.";
-
-    }
-
-});
+}
