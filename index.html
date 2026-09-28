@@ -4,17 +4,26 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Portafolio profesional de desarrollo web y proyectos tecnológicos"
+        content="Portafolio profesional de Jenniffer Pincay, estudiante de Ingeniería en Software"
     >
 
-    <title>Mi Portafolio | Desarrollo de Software</title>
+    <title>Jenniffer Pincay | Portafolio</title>
 
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="data:,">
+
+    <link
+        rel="stylesheet"
+        href="css/estilos.css"
+    >
 </head>
+
 
 <body>
 
@@ -24,11 +33,19 @@
 
     <header class="encabezado">
 
-        <nav class="navbar" aria-label="Navegación principal">
+        <nav
+            class="navbar"
+            aria-label="Navegación principal"
+        >
 
-            <a href="#inicio" class="logo">
-                MiPortafolio
+            <a
+                href="#inicio"
+                class="logo"
+                aria-label="Ir al inicio"
+            >
+                JP.
             </a>
+
 
             <button
                 class="boton-menu"
@@ -39,33 +56,50 @@
                 ☰
             </button>
 
-            <ul class="menu" id="menu">
+
+            <ul
+                class="menu"
+                id="menu"
+            >
 
                 <li>
-                    <a href="#inicio">Inicio</a>
+                    <a href="#inicio">
+                        Inicio
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#sobre-mi">Sobre mí</a>
+                    <a href="#sobre-mi">
+                        Sobre mí
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#habilidades">Habilidades</a>
+                    <a href="#habilidades">
+                        Habilidades
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#proyectos">Proyectos</a>
+                    <a href="#proyectos">
+                        Proyectos
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#design-system">Design System</a>
+                    <a href="#design-system">
+                        Design System
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#contacto">
+                        Contacto
+                    </a>
                 </li>
 
             </ul>
+
 
             <button
                 id="boton-tema"
@@ -74,6 +108,14 @@
             >
                 🌙
             </button>
+
+
+            <a
+                href="#contacto"
+                class="boton boton-primario boton-contacto-nav"
+            >
+                Contáctame
+            </a>
 
         </nav>
 
@@ -91,7 +133,10 @@
              INICIO
         ========================================= -->
 
-        <section id="inicio" class="inicio">
+        <section
+            id="inicio"
+            class="inicio"
+        >
 
             <article class="inicio-contenido">
 
@@ -113,20 +158,21 @@
                     que permitan resolver problemas reales.
                 </p>
 
+
                 <div class="inicio-botones">
 
                     <a
                         href="#proyectos"
                         class="boton boton-primario"
                     >
-                        Ver proyectos
+                        Ver mis proyectos
                     </a>
 
                     <a
-                        href="#contacto"
+                        href="#sobre-mi"
                         class="boton boton-secundario"
                     >
-                        Contactarme
+                        Conóceme
                     </a>
 
                 </div>
@@ -134,18 +180,77 @@
             </article>
 
 
-            <figure class="inicio-imagen">
+            <section
+                class="inicio-visual"
+                aria-label="Perfil profesional destacado"
+            >
 
-                <img
-                    src="img/foto-perfil.png"
-                    alt="Fotografía profesional de Jenniffer Pincay"
-                >
+                <figure class="inicio-imagen">
 
-                <figcaption>
-                    Estudiante de Ingeniería en Software
-                </figcaption>
+                    <img
+                        src="img/foto-perfil.png"
+                        alt="Fotografía profesional de Jenniffer Pincay"
+                    >
 
-            </figure>
+                    <figcaption>
+                        Estudiante de Ingeniería en Software
+                    </figcaption>
+
+                </figure>
+
+
+                <aside class="inicio-destacados">
+
+                    <article class="destacado">
+
+                        <span
+                            class="destacado-icono"
+                            aria-hidden="true"
+                        >
+                            💻
+                        </span>
+
+                        <p>
+                            Desarrollo Web
+                        </p>
+
+                    </article>
+
+
+                    <article class="destacado">
+
+                        <span
+                            class="destacado-icono"
+                            aria-hidden="true"
+                        >
+                            🧠
+                        </span>
+
+                        <p>
+                            Inteligencia Artificial
+                        </p>
+
+                    </article>
+
+
+                    <article class="destacado">
+
+                        <span
+                            class="destacado-icono"
+                            aria-hidden="true"
+                        >
+                            📊
+                        </span>
+
+                        <p>
+                            Análisis de Datos
+                        </p>
+
+                    </article>
+
+                </aside>
+
+            </section>
 
         </section>
 
@@ -154,11 +259,16 @@
              SOBRE MÍ
         ========================================= -->
 
-        <section id="sobre-mi" class="seccion">
+        <section
+            id="sobre-mi"
+            class="seccion"
+        >
 
             <header class="titulo-seccion">
 
-                <p>Conóceme</p>
+                <p>
+                    Conóceme
+                </p>
 
                 <h2>
                     Sobre mí
@@ -169,7 +279,7 @@
 
             <section class="sobre-mi-contenido">
 
-                <article>
+                <article class="sobre-mi-texto">
 
                     <h3>
                         Perfil profesional
@@ -182,32 +292,90 @@
                     </p>
 
                     <p>
-                        Durante mi formación académica he desarrollado proyectos
-                        utilizando diferentes tecnologías para solucionar
-                        problemas relacionados con software, análisis de datos
-                        y sistemas inteligentes.
+                        Durante mi formación académica he desarrollado
+                        proyectos utilizando diferentes tecnologías para
+                        solucionar problemas relacionados con software,
+                        análisis de datos y sistemas inteligentes.
                     </p>
 
                 </article>
 
 
-                <aside class="informacion-academica">
+                <aside
+                    class="datos-personales"
+                    aria-label="Información académica destacada"
+                >
 
-                    <h3>
-                        Intereses académicos
-                    </h3>
+                    <article class="dato-card">
 
-                    <ul>
-                        <li>Desarrollo web</li>
-                        <li>Inteligencia artificial</li>
-                        <li>Bases de datos</li>
-                        <li>Ciberseguridad</li>
-                        <li>Automatización</li>
-                    </ul>
+                        <span aria-hidden="true">
+                            🎓
+                        </span>
+
+                        <h3>
+                            Estudiante
+                        </h3>
+
+                        <p>
+                            Ingeniería en Software
+                        </p>
+
+                    </article>
+
+
+                    <article class="dato-card">
+
+                        <span aria-hidden="true">
+                            💻
+                        </span>
+
+                        <h3>
+                            Tecnología
+                        </h3>
+
+                        <p>
+                            Desarrollo e innovación
+                        </p>
+
+                    </article>
+
+
+                    <article class="dato-card">
+
+                        <span aria-hidden="true">
+                            🎯
+                        </span>
+
+                        <h3>
+                            Objetivo
+                        </h3>
+
+                        <p>
+                            Crear soluciones útiles
+                        </p>
+
+                    </article>
 
                 </aside>
 
             </section>
+
+
+            <aside class="intereses">
+
+                <h3>
+                    Intereses académicos
+                </h3>
+
+                <ul>
+                    <li>Desarrollo web</li>
+                    <li>Inteligencia artificial</li>
+                    <li>Bases de datos</li>
+                    <li>Ciberseguridad</li>
+                    <li>Automatización</li>
+                </ul>
+
+            </aside>
 
         </section>
 
@@ -216,11 +384,16 @@
              HABILIDADES
         ========================================= -->
 
-        <section id="habilidades" class="seccion">
+        <section
+            id="habilidades"
+            class="seccion seccion-alterna"
+        >
 
             <header class="titulo-seccion">
 
-                <p>Tecnologías</p>
+                <p>
+                    Tecnologías
+                </p>
 
                 <h2>
                     Mis habilidades
@@ -231,13 +404,19 @@
 
             <section class="grid-habilidades">
 
+
                 <article class="skill">
 
-                    <span class="skill-icono" aria-hidden="true">
+                    <span
+                        class="skill-icono"
+                        aria-hidden="true"
+                    >
                         🌐
                     </span>
 
-                    <h3>HTML5</h3>
+                    <h3>
+                        HTML5
+                    </h3>
 
                     <p>
                         Frontend
@@ -252,11 +431,16 @@
 
                 <article class="skill">
 
-                    <span class="skill-icono" aria-hidden="true">
+                    <span
+                        class="skill-icono"
+                        aria-hidden="true"
+                    >
                         🎨
                     </span>
 
-                    <h3>CSS3</h3>
+                    <h3>
+                        CSS3
+                    </h3>
 
                     <p>
                         Frontend
@@ -271,11 +455,16 @@
 
                 <article class="skill">
 
-                    <span class="skill-icono" aria-hidden="true">
+                    <span
+                        class="skill-icono"
+                        aria-hidden="true"
+                    >
                         ⚡
                     </span>
 
-                    <h3>JavaScript</h3>
+                    <h3>
+                        JavaScript
+                    </h3>
 
                     <p>
                         Frontend
@@ -290,11 +479,16 @@
 
                 <article class="skill">
 
-                    <span class="skill-icono" aria-hidden="true">
+                    <span
+                        class="skill-icono"
+                        aria-hidden="true"
+                    >
                         🐍
                     </span>
 
-                    <h3>Python</h3>
+                    <h3>
+                        Python
+                    </h3>
 
                     <p>
                         Programación
@@ -309,18 +503,23 @@
 
                 <article class="skill">
 
-                    <span class="skill-icono" aria-hidden="true">
+                    <span
+                        class="skill-icono"
+                        aria-hidden="true"
+                    >
                         🗄️
                     </span>
 
-                    <h3>PostgreSQL</h3>
+                    <h3>
+                        PostgreSQL
+                    </h3>
 
                     <p>
                         Base de datos
                     </p>
 
                     <span class="nivel">
-                             Intermedio
+                        Intermedio
                     </span>
 
                 </article>
@@ -328,32 +527,43 @@
 
                 <article class="skill">
 
-                    <span class="skill-icono" aria-hidden="true">
+                    <span
+                        class="skill-icono"
+                        aria-hidden="true"
+                    >
                         🔧
                     </span>
 
-                    <h3>Git</h3>
+                    <h3>
+                        Git
+                    </h3>
 
                     <p>
                         Herramientas
                     </p>
 
                     <span class="nivel">
-                           Intermedio
+                        Intermedio
                     </span>
 
                 </article>
 
+
                 <article class="skill">
 
-                    <span class="skill-icono" aria-hidden="true">
-                         📊
+                    <span
+                        class="skill-icono"
+                        aria-hidden="true"
+                    >
+                        📊
                     </span>
 
-                    <h3>R</h3>
+                    <h3>
+                        R
+                    </h3>
 
                     <p>
-                       Análisis de datos
+                        Análisis de datos
                     </p>
 
                     <span class="nivel">
@@ -362,13 +572,19 @@
 
                 </article>
 
+
                 <article class="skill">
 
-                    <span class="skill-icono" aria-hidden="true">
-                       📈
+                    <span
+                        class="skill-icono"
+                        aria-hidden="true"
+                    >
+                        📈
                     </span>
 
-                    <h3>Power BI</h3>
+                    <h3>
+                        Power BI
+                    </h3>
 
                     <p>
                         Inteligencia de Negocios
@@ -389,11 +605,16 @@
              PROYECTOS
         ========================================= -->
 
-        <section id="proyectos" class="seccion">
+        <section
+            id="proyectos"
+            class="seccion"
+        >
 
             <header class="titulo-seccion">
 
-                <p>Mi trabajo</p>
+                <p>
+                    Mi trabajo
+                </p>
 
                 <h2>
                     Proyectos destacados
@@ -401,8 +622,6 @@
 
             </header>
 
-
-            <!-- FILTROS -->
 
             <div
                 class="filtros"
@@ -421,7 +640,7 @@
                     class="filtro"
                     data-filtro="web"
                 >
-                    Web
+                    Desarrollo Web
                 </button>
 
                 <button
@@ -429,13 +648,6 @@
                     data-filtro="ia"
                 >
                     Inteligencia Artificial
-                </button>
-
-                <button
-                    class="filtro"
-                    data-filtro="iot"
-                >
-                    IoT
                 </button>
 
             </div>
@@ -455,10 +667,11 @@
 
                         <img
                             src="img/agematch.png"
-                            alt=" Proyecto AgeMatch"
+                            alt="Proyecto AgeMatch"
                         >
 
                     </figure>
+
 
                     <section class="proyecto-contenido">
 
@@ -482,9 +695,11 @@
                         </h4>
 
                         <p>
-                            Facilita el análisis automático de características
-                            faciales y emociones utilizando visión artificial.
+                            Facilita el análisis automático de
+                            características faciales y emociones
+                            utilizando visión artificial.
                         </p>
+
 
                         <div class="tecnologias">
 
@@ -495,6 +710,7 @@
 
                         </div>
 
+
                         <div class="proyecto-enlaces">
 
                             <a
@@ -503,7 +719,7 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                GitHub 
+                                GitHub
                             </a>
 
                             <button
@@ -531,10 +747,11 @@
 
                         <img
                             src="img/mango.png"
-                            alt="Clasificación de Patologías Foliarías del Mango mediante CNN"
+                            alt="Clasificación de patologías foliares del mango mediante redes neuronales convolucionales"
                         >
 
                     </figure>
+
 
                     <section class="proyecto-contenido">
 
@@ -543,13 +760,13 @@
                         </span>
 
                         <h3>
-                            Clasificación de Patologías Foliarías del Mango mediante Redes Neuronales Convolucionales
+                            Clasificación de Patologías Foliares del Mango
                         </h3>
 
                         <p>
-                             Sistema de inteligencia artificial desarrollado para clasificar
-                             enfermedades presentes en hojas de mango a partir de imágenes,
-                             utilizando modelos de redes neuronales convolucionales.
+                            Sistema de inteligencia artificial desarrollado
+                            para clasificar enfermedades presentes en hojas
+                            de mango a partir de imágenes.
                         </p>
 
                         <h4>
@@ -557,10 +774,11 @@
                         </h4>
 
                         <p>
-                            Ayuda a identificar automáticamente distintas patologías foliares
-                            del mango, reduciendo la dependencia de una inspección visual manual
-                            y facilitando una clasificación más rápida y consistente.
+                            Ayuda a identificar automáticamente distintas
+                            patologías foliares, facilitando una clasificación
+                            más rápida y consistente.
                         </p>
+
 
                         <div class="tecnologias">
 
@@ -572,6 +790,7 @@
                             <span>DenseNet121</span>
 
                         </div>
+
 
                         <div class="proyecto-enlaces">
 
@@ -614,6 +833,7 @@
 
                     </figure>
 
+
                     <section class="proyecto-contenido">
 
                         <span class="etiqueta">
@@ -621,13 +841,13 @@
                         </span>
 
                         <h3>
-                            Sistema Medico
+                            Sistema Médico
                         </h3>
 
                         <p>
-                            Aplicación web diseñada para apoyar la gestión de pacientes,
-                            citas médicas y registros clínicos mediante una interfaz
-                            organizada y fácil de utilizar.
+                            Aplicación web diseñada para apoyar la gestión
+                            de pacientes, citas médicas y registros clínicos
+                            mediante una interfaz organizada.
                         </p>
 
                         <h4>
@@ -635,10 +855,11 @@
                         </h4>
 
                         <p>
-                            Facilita el registro y consulta de información médica,
-                            permitiendo organizar pacientes y citas de manera más
-                            eficiente y reduciendo el uso de registros manuales.
+                            Facilita el registro y consulta de información
+                            médica, permitiendo organizar pacientes y citas
+                            de manera más eficiente.
                         </p>
+
 
                         <div class="tecnologias">
 
@@ -648,6 +869,7 @@
                             <span>Base de datos</span>
 
                         </div>
+
 
                         <div class="proyecto-enlaces">
 
@@ -682,11 +904,16 @@
              DESIGN SYSTEM
         ========================================= -->
 
-        <section id="design-system" class="seccion">
+        <section
+            id="design-system"
+            class="seccion seccion-alterna"
+        >
 
             <header class="titulo-seccion">
 
-                <p>Sistema visual</p>
+                <p>
+                    Sistema visual
+                </p>
 
                 <h2>
                     Design System / Componentes
@@ -695,177 +922,284 @@
             </header>
 
 
-            <!-- COLORES -->
-
-            <article class="design-bloque">
-
-                <h3>
-                    Paleta de colores
-                </h3>
-
-                <section class="paleta">
-
-                    <article class="color color-primary">
-                        <span>Primary</span>
-                        <code>#B76E4B</code>
-                    </article>
-
-                    <article class="color color-secondary">
-                        <span>Secondary</span>
-                        <code>#D6A77A</code>
-                    </article>
-
-                    <article class="color color-background">
-                        <span>Background</span>
-                        <code>#F8F3EA</code>
-
-                    </article>
-
-                    <article class="color color-surface">
-                        <span>Surface</span>
-                        <code>#FFFAF3</code>
-                    </article>
-
-                    <article class="color color-text">
-                        <span>Text</span>
-                        <code>#2F2A26</code>
-                    </article>
-
-                </section>
-
-            </article>
+            <section class="design-grid">
 
 
-            <!-- TIPOGRAFÍA -->
+                <!-- COLORES -->
 
-            <article class="design-bloque">
+                <article class="design-bloque">
 
-                <h3>
-                    Tipografía
-                </h3>
-
-                <section class="tipografia-ejemplos">
-
-                    <h1>
-                        Encabezado H1
-                    </h1>
-
-                    <h2>
-                        Encabezado H2
-                    </h2>
+                    <span
+                        class="design-icono"
+                        aria-hidden="true"
+                    >
+                        🎨
+                    </span>
 
                     <h3>
-                        Encabezado H3
+                        Colores
+                    </h3>
+
+
+                    <section class="paleta">
+
+                        <article class="color color-primary">
+
+                            <span>
+                                Primary
+                            </span>
+
+                            <code>
+                                #B76E4B
+                            </code>
+
+                        </article>
+
+
+                        <article class="color color-secondary">
+
+                            <span>
+                                Secondary
+                            </span>
+
+                            <code>
+                                #D6A77A
+                            </code>
+
+                        </article>
+
+
+                        <article class="color color-background">
+
+                            <span>
+                                Background
+                            </span>
+
+                            <code>
+                                #F8F3EA
+                            </code>
+
+                        </article>
+
+
+                        <article class="color color-surface">
+
+                            <span>
+                                Surface
+                            </span>
+
+                            <code>
+                                #FFFAF3
+                            </code>
+
+                        </article>
+
+
+                        <article class="color color-text">
+
+                            <span>
+                                Text
+                            </span>
+
+                            <code>
+                                #2F2A26
+                            </code>
+
+                        </article>
+
+                    </section>
+
+                </article>
+
+
+                <!-- TIPOGRAFÍA -->
+
+                <article class="design-bloque">
+
+                    <span
+                        class="design-icono"
+                        aria-hidden="true"
+                    >
+                        Aa
+                    </span>
+
+                    <h3>
+                        Tipografía
+                    </h3>
+
+
+                    <section class="tipografia-ejemplos">
+
+                        <h1>
+                            Encabezado H1
+                        </h1>
+
+                        <h2>
+                            Encabezado H2
+                        </h2>
+
+                        <h3>
+                            Encabezado H3
+                        </h3>
+
+                        <p>
+                            Ejemplo de texto utilizado en los párrafos.
+                        </p>
+
+                        <small>
+                            Ejemplo de texto secundario.
+                        </small>
+
+                        <a href="#inicio">
+                            Ejemplo de enlace
+                        </a>
+
+                    </section>
+
+                </article>
+
+
+                <!-- ESPACIADO -->
+
+                <article class="design-bloque">
+
+                    <span
+                        class="design-icono"
+                        aria-hidden="true"
+                    >
+                        ↔
+                    </span>
+
+                    <h3>
+                        Espaciado
+                    </h3>
+
+
+                    <section class="espaciados">
+
+                        <article>
+                            <span>SM</span>
+                            <code>0.5rem</code>
+                        </article>
+
+                        <article>
+                            <span>MD</span>
+                            <code>1rem</code>
+                        </article>
+
+                        <article>
+                            <span>LG</span>
+                            <code>2rem</code>
+                        </article>
+
+                        <article>
+                            <span>XL</span>
+                            <code>4rem</code>
+                        </article>
+
+                    </section>
+
+                </article>
+
+
+                <!-- BOTONES -->
+
+                <article class="design-bloque">
+
+                    <span
+                        class="design-icono"
+                        aria-hidden="true"
+                    >
+                        ▰
+                    </span>
+
+                    <h3>
+                        Botones
+                    </h3>
+
+
+                    <div class="componentes-ejemplo">
+
+                        <button class="boton boton-primario">
+                            Botón primario
+                        </button>
+
+                        <button class="boton boton-secundario">
+                            Botón secundario
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FORMULARIOS -->
+
+                <article class="design-bloque">
+
+                    <span
+                        class="design-icono"
+                        aria-hidden="true"
+                    >
+                        ✉
+                    </span>
+
+                    <h3>
+                        Formularios
+                    </h3>
+
+
+                    <form class="ejemplo-formulario">
+
+                        <label for="ejemplo-input">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="ejemplo-input"
+                            value="Ejemplo de nombre"
+                            readonly
+                        >
+
+
+                        <label for="ejemplo-textarea">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="ejemplo-textarea"
+                            readonly
+                        >Ejemplo de mensaje</textarea>
+
+                    </form>
+
+                </article>
+
+
+                <!-- NAVEGACIÓN -->
+
+                <article class="design-bloque">
+
+                    <span
+                        class="design-icono"
+                        aria-hidden="true"
+                    >
+                        ☰
+                    </span>
+
+                    <h3>
+                        Navegación
                     </h3>
 
                     <p>
-                        Ejemplo de texto utilizado en los párrafos.
+                        Navbar responsive con enlaces internos,
+                        menú móvil y selector de tema.
                     </p>
 
-                    <small>
-                        Ejemplo de texto secundario.
-                    </small>
+                </article>
 
-                    <a href="#inicio">
-                        Ejemplo de enlace
-                    </a>
-
-                </section>
-
-            </article>
-
-
-            <!-- ESPACIADO -->
-
-            <article class="design-bloque">
-
-                <h3>
-                    Espaciado
-                </h3>
-
-                <section class="espaciados">
-
-                    <article>
-                        <span>SM</span>
-                        <code>0.5rem</code>
-                    </article>
-
-                    <article>
-                        <span>MD</span>
-                        <code>1rem</code>
-                    </article>
-
-                    <article>
-                        <span>LG</span>
-                        <code>2rem</code>
-                    </article>
-
-                    <article>
-                        <span>XL</span>
-                        <code>4rem</code>
-                    </article>
-
-                </section>
-
-            </article>
-
-
-            <!-- BOTONES -->
-
-            <article class="design-bloque">
-
-                <h3>
-                    Botones
-                </h3>
-
-                <div class="componentes-ejemplo">
-
-                    <button class="boton boton-primario">
-                        Botón primario
-                    </button>
-
-                    <button class="boton boton-secundario">
-                        Botón secundario
-                    </button>
-
-                </div>
-
-            </article>
-
-
-            <!-- INPUTS -->
-
-            <article class="design-bloque">
-
-                <h3>
-                    Inputs
-                </h3>
-
-                <form class="ejemplo-formulario">
-
-                    <label for="ejemplo-input">
-                        Nombre
-                    </label>
-
-                    <input
-                        type="text"
-                        id="ejemplo-input"
-                        placeholder="Escribe tu nombre"
-                    >
-
-
-                    <label for="ejemplo-textarea">
-                        Mensaje
-                    </label>
-
-                    <textarea
-                        id="ejemplo-textarea"
-                        placeholder="Escribe un mensaje"
-                    ></textarea>
-
-                </form>
-
-            </article>
+            </section>
 
         </section>
 
@@ -874,11 +1208,16 @@
              CONTACTO
         ========================================= -->
 
-        <section id="contacto" class="seccion">
+        <section
+            id="contacto"
+            class="seccion contacto"
+        >
 
             <header class="titulo-seccion">
 
-                <p>Hablemos</p>
+                <p>
+                    Hablemos
+                </p>
 
                 <h2>
                     Contacto
@@ -891,63 +1230,94 @@
 
                 <article class="contacto-informacion">
 
+                    <span
+                        class="contacto-icono"
+                        aria-hidden="true"
+                    >
+                        ✉
+                    </span>
+
                     <h3>
                         ¿Quieres comunicarte conmigo?
                     </h3>
 
                     <p>
-                        Puedes utilizar el formulario para enviarme un
-                        mensaje relacionado con proyectos, estudios o
-                        colaboración.
+                        Si tienes alguna pregunta, propuesta o quieres
+                        trabajar conmigo, puedes enviarme un mensaje.
                     </p>
 
                     <p>
-                        Email profesional:
-
-                        <a href="mailto:correo@gmail.com">
-                            correo@gmail.com
-                        </a>
+                        También puedes utilizar este formulario para
+                        comunicarte conmigo sobre proyectos, estudios
+                        o colaboración.
                     </p>
 
                 </article>
 
 
-                <form 
+                <form
                     id="formulario-contacto"
                     action="https://formspree.io/f/mdekpyap"
                     method="POST"
                 >
-                    <label for="nombre">Nombre</label>
+
+                    <label for="nombre">
+                        Nombre
+                    </label>
+
                     <input
-                       type="text"
-                       id="nombre"
-                       name="nombre"
-                       required
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        autocomplete="name"
+                        required
                     >
 
-                    <label for="correo">Correo electrónico</label>
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
                     <input
-                       type="email"
-                       id="correo"
-                       name="email"
-                       required
-                     >
-
-                     <label for="mensaje">Mensaje</label>
-                     <textarea
-                         id="mensaje"
-                         name="mensaje"
-                         required
-                     ></textarea>
-
-                     <button
-                          type="submit"
-                          class="boton boton-primario"
+                        type="email"
+                        id="correo"
+                        name="email"
+                        placeholder="correo@ejemplo.com"
+                        autocomplete="email"
+                        required
                     >
-                            Enviar mensaje
-                     </button>
 
-                 </form>
+
+                    <label for="mensaje">
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu mensaje"
+                        required
+                    ></textarea>
+
+
+                    <button
+                        type="submit"
+                        class="boton boton-primario"
+                    >
+                        Enviar mensaje
+                    </button>
+
+
+                    <p
+                        id="mensaje-formulario"
+                        class="mensaje-formulario"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
             </section>
 
         </section>
@@ -996,9 +1366,12 @@
     </dialog>
 
 
-    <!-- JAVASCRIPT -->
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
 
     <script src="js/script.js"></script>
 
 </body>
 
+</html>
